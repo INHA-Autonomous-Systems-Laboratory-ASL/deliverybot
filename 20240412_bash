@@ -1,0 +1,2000 @@
+sudo git push origin main
+ls
+cd deliverybot_
+cd deliverybot_description/
+ls
+ls -al
+sudo rm -r .git/
+ls
+ls -a
+ls
+cd ..
+ls
+cd depthimage_to_laserscan/
+ls
+ls -al
+sudo rm -r .git/
+cd ..
+ls
+ls -al
+cd laser_filters/
+sudo rm -r .git
+cd ..
+cd pointcloud_to_laserscan/
+ls
+ls -al
+sudo rm -r .git/
+cd ..
+ls
+sudo git add -A
+sudo git commit -m "first commit"
+sudo git add -A
+sudo git status 
+sudo git push origin main
+sudo git add -A
+sudo git status
+sudo git push origin main
+ls
+cd deliverybot_description/
+ls
+ls -al
+cd ..
+cd
+cd ros2_catkin_ws/
+ls
+cd src/
+ls
+sudo git add .
+sudo git status 
+sudo git commit -m "test"
+sudo git push origin main
+sudo git add .
+sudo git status 
+sudo git commit -m "test"
+sudo git push origin main
+ls
+cd laser_filters/
+ls -al
+cd .github/
+ls
+cd workflows/
+ls
+sudo gedit ros2_ci.yml 
+cd ../..
+ls
+sudo rm -r .github
+cd ..
+ls
+sudo git add .
+sudo git status 
+sudo git commit -m "test"
+sudo git push origin main
+sudo git add .
+sudo git status 
+sudo git commit -m "test"
+sudo git push origin main
+sudo add-apt-repository ppa:nm-l2tp/network-manager-l2tp
+sudo apt-get update
+sudo apt-get install network-manager-l2tp  network-manager-l2tp-gnome
+nm-connection-editor 
+foxy
+rviz2
+ifconfig
+nm-connection-editor 
+mkdir -p ~/.config/autostart
+cp /usr/share/applications/vino-server.desktop ~/.config/autostart/.
+cd /usr/lib/systemd/user/graphical-session.target.wants
+sudo ln -s ../vino-server.service ./.
+gsettings set org.gnome.Vino prompt-enabled false
+gsettings set org.gnome.Vino require-encryption false
+gsettings set org.gnome.Vino authentication-methods "['vnc']"
+gsettings set org.gnome.Vino vnc-password $(echo -n 'thepassword'|base64)
+sudo reboot
+ifconfig
+foxy
+ros2 topic echo /jot
+ros2 topic echo /joy
+ros2 topic echo /cmd_vel 
+ros2 topic echo /joy
+ros2 topic echo /cmd_vel 
+ros2 topic echo /joy
+ros2 topic echo /cmd_vel 
+ros2 topic echo /
+ros2 topic echo /joy
+ros2 topic echo /cmd_vel 
+sudo nano ~/.bashrc 
+ros2 topic list
+ros2 run robot_upstart install --job joystic teleop_twist_joy/launch/teleop-launch.py joy_config:='xbox'
+ros2 run robot_upstart install --job joystic teleop_twist_joy/launch/teleop-launch.py
+ros2 topic list
+ros2 topic echo /cmd_vel 
+foxy
+ros2 launch teleop_twist_joy 
+ros2 launch teleop_twist_joy teleop-launch.py
+ros2 launch teleop_twist_joy teleop-launch.py joy_config:='xbox'
+ros2 launch teleop_twist_joy teleop-launch.py joy_config:='ps3'
+ros2 launch teleop_twist_joy teleop-launch.py joy_config:='xd3'
+ros2 launch teleop_twist_joy teleop-launch.py
+ros2 launch teleop_twist_joy teleop-launch.py joy_config:='xbox'
+ros2 launch teleop_twist_joy teleop-launch.py
+ros2 launch teleop_twist_joy teleop-launch.py joy_config:='xbox'
+ls
+sudo nano ~/test.sh
+cd /etc/systemd/
+ls
+cd
+sudo gedit bringup_ros.service
+ls
+cd ~/
+ls
+sudo gedit test.sh
+cd /etc/systemd/system/
+ls
+cd ..
+cd system/
+ls
+sudo gedit bringup_ros.service
+sudo systemctl start bringup_ros.service
+sudo systemctl status bringup_ros.service
+sudo gedit bringup_ros.service
+sudo systemctl daemon-reload
+sudo systemctl start bringup_ros.service
+sudo systemctl status bringup_ros.service
+cd
+ls
+sudo chmod 777 test.sh 
+sudo systemctl daemon-reload
+sudo systemctl start bringup_ros.service
+sudo systemctl status bringup_ros.service
+sudo nano test.sh 
+sudo systemctl daemon-reload
+sudo systemctl start bringup_ros.service
+sudo systemctl status bringup_ros.service
+sudo systemctl daemon-reload
+sudo systemctl start bringup_ros.service
+sudo systemctl status bringup_ros.service
+sudo systemctl start bringup_ros.service
+sudo systemctl status bringup_ros.service
+ls
+sudo rm test.sh 
+cd /etc/systemd/system/
+sudo rm bringup_ros.service 
+sudo systemctl daemon-reload
+sudo apt-get install ros-foxy-robot-upstart 
+cd
+ls
+cd ros2_catkin_ws/
+ls
+cd src/
+ls
+cd deliverybot_bringup/
+ls
+cd
+cd ros2_catkin_ws/
+source install/setup.sh 
+ros2 launch deliverybot_bringup robot.launch.py 
+ros2 run robot_upstart --job deliverybot_bringup --setup ~/ros2_catkin_ws/install/setup.bash deliverybot_bringup/launch/robot.launch.py 
+ros2 topic list
+ros2 run robot_upstart --job deliverybot_bringup --setup ~/ros2_catkin_ws/install/setup.bash deliverybot_bringup/launch/robot.launch.py
+ls
+cd src/
+ls
+ros2 run robot_upstart --job deliverybot_bringup --setup ~/ros2_catkin_ws/install/setup.bash deliverybot_bringup/launch/robot.launch.py
+cd
+ros2 run robot_upstart --job deliverybot_bringup --setup ~/ros2_catkin_ws/install/setup.bash deliverybot_bringup/launch/robot.launch.py --logdir ~/mylog.log
+ros2 run robot_upstart 
+ros2 run robot_upstart install --job deliverybot_bringup --setup ~/ros2_catkin_ws/install/setup.bash deliverybot_bringup/launch/robot.launch.py
+sudo systemctl daemon-reload && sudo systemctl start deliverybot_bringup
+sudo systemctl status deliverybot_bringup.service 
+sudo reboot 
+foxy
+ros2 topic list
+ros2 topic echo /joy
+ros2 topic echo /cmd_vel 
+sudo shutdown now
+noetic 
+foxy
+ros2 run ros1_bridge dynamic_bridge 
+noetic 
+rosrun turtlesim turtle_teleop_key 
+foxy
+ros2 run ros1_bridge dynamic_bridge
+foxy
+ros2 topic list
+noetic 
+rosnode list
+rostopic list
+rostopic echo /turtle1/cmd_vel 
+foxy
+ros2 topic echo /cmd_vel 
+ros2 topic echo /turtle1/cmd_vel 
+sudo nano ~/.bashrc 
+noeit
+noetic 
+roscore
+sudo apt-get install ros-foxy-ros1-bridge
+foxy
+ros2 run turtlesim turtlesim_node 
+sudo shutdown now
+noetic 
+sudo nano ~/.bashrc 
+ls
+cd ros1_catkin_ws/
+ls
+catkin_make
+ls
+catkin build
+sudo apt install ros-noetic-serial
+cd
+cd ros1_catkin_ws/
+catkin build 
+noetic 
+ls
+sudo nano ~/.bashrc 
+noetic 
+rostopic list
+rostopic echo /cmd_vel 
+https://github.com/YoungSeong98/md.git
+ls
+rostopic list
+rostopic echo /cmd_vel 
+foxy
+sudo apt-get install moserial
+noetic 
+foxy
+ros2 run ros1_bridge dynamic_bridge 
+sudo shutdown now
+ls
+ls -l /dev/tty*
+noetic 
+roslaunch md md_robot_node.launch 
+sudo chmod 777 /dev/ttyUSB0 
+roslaunch md md_robot_node.launch 
+ls
+cd ros1_catkin_ws/
+ls
+cd src/
+ls
+sudo rm -r md/
+ls
+mkdir md
+ls
+cd md/
+git clone https://github.com/YoungSeong98/md.git
+lx
+ls
+sudo rm -r md/
+ls
+cd ..
+ls
+sudo rm -r md
+git clone https://github.com/YoungSeong98/md.git
+cd ..
+ls
+catkin build
+roslaunch md md_robot_node.launch 
+ls -l /dev/tty*
+sudo chmod 777 /dev/ttyUSB0 
+roslaunch md md_robot_node.launch 
+catkin build
+roslaunch md md_robot_node.launch 
+catkin build
+roslaunch md md_robot_node.launch 
+sudo chmod 777 /dev/ttyUSB0 
+roslaunch md md_robot_node.launch 
+catkin build
+roslaunch md md_robot_node.launch 
+catkin build
+sudo chmod 777 /dev/ttyUSB1
+roslaunch md md_robot_node.launch 
+sudo chmod 777 /dev/ttyUSB1
+catkin build
+roslaunch md md_robot_node.launch 
+catkin build
+roslaunch md md_robot_node.launch 
+catkin build
+roslaunch md md_robot_node.launch 
+noetic 
+foxy
+history
+ros2 run ros1_bridge dynamic_bridgeros2 
+ros2 run ros1_bridge dynamic_bridge
+foxy
+ros2 run ros1_bridge dynamic_bridge
+history
+noetic 
+roslaunch md md_robot_node
+roslaunch md md_robot_node.launch
+sudo nano /etc/udev/rules.d/50-deliverybot.rules
+roslaunch md md_robot_node.launch
+noetic 
+sudo apt-get install ros-noetic-robot-upstart 
+sudo nano ~/.bashrc 
+noetic 
+code
+sudo systemctl status deliverybot_bringup.service 
+noetic 
+lsusb
+ls -al /dev/serial/by-id
+ls -al /dev/tty*
+lsusb
+ls -al /dev/tty*
+noetic 
+foxy
+ros2 run ros1_bridge dynamic_bridge 
+sudo apt-get install ros-noetic-robot-upstart 
+rosrun robot_upstart install md/launch/md_robot_node.launch
+sudo systemctl daemon-reload && sudo systemctl start md
+sudo systemctl status md
+sudo systemctl status deliverybot_bringup.service 
+sudo nano ~/.bashrc 
+foxy
+noetic 
+foxy
+ros2 run ros1_bridge dynamic_bridge 
+cd
+ls
+foxy
+ros2 topic echo /cmd_vel 
+ros2 run ros1_bridge dynamic_bridge 
+noeit
+noetic 
+ros2 run ros1_bridge dynamic_bridge 
+foxy
+ros2 topic echo /cmd_vel 
+ros2 topic list
+ros2 topic echo /joy
+sudo reboot 
+foxy
+cd ros2_catkin_ws/
+ls
+source install/setup.bash 
+sudo systemctl daemon-reload 
+sudo systemctl status deliverybot_bringup.service 
+sudo systemctl restart deliverybot_bringup.service 
+noetic 
+foxy
+source install/setup.sh
+sudo systemctl status deliverybot_bringup.service 
+sudo systemctl daemon-reload 
+sudo systemctl restart deliverybot_bringup.service 
+sudo systemctl status deliverybot_bringup.service 
+cccd /etc/systemd/system
+ls
+cd
+cd /etc/systemd/system/
+ls
+cd
+ls
+cd /home/nvidia/
+ls
+sudo nano ros1_bridge.sh
+cd /etc/systemd/system/
+sudo nano ros1_bridge_init.service
+cd
+sudo systemctl daemon-reload 
+sudo systemctl enable ros1_bridge_init.service 
+sudo systemctl start ros1_bridge_init.service 
+sudo systemctl status ros1_bridge_init.service 
+ls
+sudo chmod 666 ros1_bridge.sh 
+;s
+sudo systemctl daemon-reload 
+sudo systemctl enable ros1_bridge_init.service 
+sudo systemctl start ros1_bridge_init.service 
+sudo systemctl status ros1_bridge_init.service 
+sudo systemctl restart ros1_bridge_init.service 
+sudo systemctl status ros1_bridge_init.service 
+cd /etc/systemd/system/
+ls
+sudo chmod 666 ros1_bridge_init.service 
+cd
+sudo systemctl daemon-reload 
+sudo systemctl restart ros1_bridge_init.service 
+sudo systemctl status ros1_bridge_init.service 
+ls
+sudo chmod 777 ros1_bridge.sh 
+sudo systemctl stop ros1_bridge_init.service
+sudo systemctl status ros1_bridge_init.se
+sudo systemctl daemon-reload
+sudo systemctl status ros1_bridge_init.service 
+sudo systemctl start ros1_bridge_init.service 
+sudo systemctl status ros1_bridge_init.service 
+cd /etc/systemd/system/
+ls
+cd
+ls
+sudo nano ros1_bridge.sh 
+sudo systemctl daemon-reload 
+sudo systemctl start ros1_bridge_init.service 
+sudo systemctl status ros1_bridge_init.service 
+sudo systemctl restart ros1_bridge_init.service 
+sudo systemctl status ros1_bridge_init.service 
+rostopic list
+rostopic echo /cmd_vel _ve
+rostopic echo /cmd_vel
+ros2 topic list
+ros2 topic echo /cmd_vel 
+ros2 topic echo /joy
+foxy
+ros2 topic echo /cmd_vel 
+ros2 topic list
+ros2 topic echo joy
+sudo systemctl status ros1_bridge_init.service 
+sudo systemctl daemon-reload 
+sudo systemctl status ros1_bridge_init.service 
+sudo systemctl restart ros1_bridge_init.service 
+sudo systemctl status ros1_bridge_init.service 
+sudo nano ros1_bridge.sh 
+sudo systemctl daemon-reload 
+sudo systemctl restart ros1_bridge_init.service 
+sudo systemctl status ros1_bridge_init.service 
+sudo nano ros1_bridge.sh 
+sudo systemctl daemon-reload 
+sudo systemctl restart ros1_bridge_init.service 
+sudo systemctl status ros1_bridge_init.service 
+ls
+sudo nano ro1_b
+sudo nano ros1_bridge.sh 
+sudo systemctl daemon-reload 
+sudo systemctl start ros1_bridge_init.service 
+sudo systemctl status ros1_bridge_init.service 
+sudo nano ros1_bridge.sh 
+sudo systemctl daemon-reload 
+sudo systemctl start ros1_bridge_init.service 
+sudo systemctl status ros1_bridge_init.service 
+sudo nano ros1_bridge.sh 
+sudo systemctl daemon-reload 
+sudo systemctl start ros1_bridge_init.service 
+sudo systemctl status ros1_bridge_init.service 
+ls
+sudo mkdir ~/my_log
+sudo nano ros1_bridge.sh 
+sudo systemctl daemon-reload 
+sudo systemctl start ros1_bridge_init.service 
+sudo systemctl status ros1_bridge_init.service 
+sudo nano ros1_bridge.sh 
+sudo systemctl status ros1_bridge_init.service 
+sudo nano ros1_bridge.sh 
+sudo systemctl daemon-reload 
+sudo systemctl start ros1_bridge_init.service 
+sudo systemctl status ros1_bridge_init.service 
+sudo nano ros1_bridge.sh 
+sudo systemctl daemon-reload 
+sudo systemctl start ros1_bridge_init.service 
+sudo systemctl status ros1_bridge_init.service 
+foxy
+noetic 
+ros2 run ros1_bridge dynamic_bridge 
+ros2 topic list
+rostopic list
+rostopic echo /cmd_vel 
+sudo systemctl status ros1_bridge_init.service 
+sudo systemctl daemon-reload 
+sudo systemctl start ros1_bridge_init.service 
+sudo systemctl status ros1_bridge_init.service 
+rostopic echo /cmd_vel 
+ros2 topic echo /cmd_vel 
+sudo systemctl status ros1_bridge_init.service 
+sudo nano ros1_bridge.sh 
+ls
+sudo systemctl daemon-reload 
+sudo systemctl start ros1_bridge_init.service 
+sudo systemctl status ros1_
+sudo nano ros1_bridge.sh 
+sudo systemctl enable ros1_bridge_init.service 
+sudo reboot 
+noetic 
+rostopic list
+rostopic echo /cmd_vel 
+foxy
+ros2 topic list
+ros2 topic echo /cmd_vel 
+sudo shutdown now
+foxy
+ros2 topic list
+ros2 topic echo /cmd_vel 
+ls
+ros2 run teleop_twist_keyboard teleop_twist_keyboard 
+ros2 topic echo /cmd_vel 
+ls
+foxy
+ros2 run teleop_twist_joy teleop_node 
+sudo apt-get remove ros-foxy-teleop-twist-joy 
+ls
+cd rso2
+ls
+cd ros2_catkin_ws/
+ls
+cd src/
+ls
+git clone https://github.com/ros2/teleop_twist_joy.git
+ls
+cd ..
+colcon build --symlink-install
+foxy
+colcon build --symlink
+ls
+cd src/
+ls
+sudo rm -r teleop_twist_joy/
+git clone https://github.com/ros2/teleop_twist_joy.git
+cd teleop_twist_joy/
+ls
+git branch -a
+git checkout origin/foxy 
+cd ..
+ls
+cd teleop_twist_joy/
+git branch -a
+cd ..
+ls
+sudo rm -r teleop_twist_joy/
+git clone -b foxy https://github.com/ros2/teleop_twist_joy.git
+cd teleop_twist_joy/
+git branch -a
+cd ..
+ls
+cd ..
+colcon build --symlink-install
+ls
+source install/setup.sh 
+ros2 launch  deliverybot_bringup robot.launch.py 
+ros2 topic list
+ros2 launch teleop_twist_joy teleop-launch.py joy_config:='xbox'
+foxy
+cd
+ros2 topic list
+cd ros2_catkin_ws/
+ls
+source install/setup.sh 
+ros2 topic list
+ros2 topic echo /cmd_vel
+noetic 
+rostopic list
+cd /lib/systemd/system
+ls
+sudo nano md.service 
+cd
+rosrun robot_upstart install yocs_cmd_vel_mux/launch/cmd_vel_mux.launch
+sudo systemctl daemon-reload && sudo systemctl start yocs
+sudo systemctl status yocs.service 
+sudo reboot 
+foxy
+ros2 topic list
+cd src/
+ls
+sudo rm -r teleop_twist_joy/
+ls
+sudo apt-get install ros-foxy-teleop-twist-joy
+foxy
+sudo nano ~/.bashrc 
+cd ros2_catkin_ws/
+ls
+source install/setup.sh 
+ros2 launch teleop_twist_joy teleop-launch.py joy_config:='xbox'
+noetic 
+cd ros1_catkin_ws/
+ls
+catkin build
+noetic 
+cd
+ls
+sudo systemctl status deliverybot_bringup.service 
+sudo systemctl stop deliverybot_bringup.service 
+sudo systemctl status deliverybot_bringup.service 
+ls
+rostopic list
+rostopic echo /cmd_vel 
+sudo systemctl start deliverybot_bringup.service 
+sudo systemctl status deliverybot_bringup.service 
+sudo systemctl stop deliverybot_bringup.service 
+rostopic list
+rostopic echo /cmd_vel 
+sudo systemctl stop deliverybot_bringup.service 
+sudo systemctl start deliverybot_bringup.service 
+ls
+noetic 
+roslaunch yocs_cmd_vel_mux 
+roslaunch yocs_cmd_vel_mux cmd_vel_mux.launch 
+foxy
+ros2 node list 
+ros2 topic list
+ros2 run turtlesim turtle_teleop_key 
+ros2 topic list
+foxy
+ros2 topic list
+ros2 node list
+ros2 run turtlesim turtlesim_node 
+foxy
+ros2 topic li
+ros2 daemon stop
+ros2 daemon start
+ros2 topic list
+sudo systemctl status deliverybot_bringup.service 
+sudo systemctl daemon-reload 
+sudo systemctl start deliverybot_bringup
+sudo systemctl status deliverybot_bringup.service 
+sudo systemctl restart deliverybot_bringup.service 
+sudo systemctl start deliverybot_bringup
+sudo systemctl status deliverybot_bringup.service 
+sudo systemctl daemon-reload 
+sudo systemctl restart deliverybot_bringup.service 
+sudo systemctl status deliverybot_bringup.service 
+sudo systemctl restart deliverybot_bringup.service 
+sudo systemctl status deliverybot_bringup.service 
+sudo systemctl daemon-reload 
+sudo systemctl restart deliverybot_bringup.service 
+sudo systemctl status deliverybot_bringup.service 
+sudo systemctl daemon-reload 
+sudo systemctl restart deliverybot_bringup.service 
+sudo systemctl status deliverybot_bringup.service 
+sudo systemctl restart deliverybot_bringup.service 
+sudo systemctl status deliverybot_bringup.service 
+sudo apt-get install ros-foxy-teleop-twist-joy
+ros2 launch teleop_twist_joy joy_config:='xbox'
+cd /opt/ros/foxy/share/teleop_twist_
+cd /opt/ros/foxy/share/teleop_twist_joy/
+ls
+cd config/
+ls
+cd ..
+cd launch/
+ls
+cd ..
+cd
+ros2 launch teleop_twist_joy teleop-launch.py joy_config:='xbox'
+ros2 daemon stop
+ros2 daemon start
+foxy
+ros2 topic list
+sudo systemctl status deliverybot_bringup.service 
+ros2 run robot_upstart uninstall deliverybot_bringup
+fox
+ros2 run robot_upstart uninstall bringup
+history
+history -a
+noetic 
+rostopic list
+foxy
+ros2 topic list
+rqt
+ros2 topic list
+ros2 node list
+foxy
+ros2 run turtlesim turtle_teleop_key 
+foxy
+ros2 run turtlesim turtlesim_node 
+ls
+sudo nano ros1_bridge.sh 
+sudo systemctl status ros1_bridge_init.service 
+foxy
+ros2 topic list
+ls
+sudo systemctl stop ros1_bridge_init.service 
+noetic 
+rostopic list
+foxy
+ros2 topic list
+ros2 run turtlesim turtle_teleop_key 
+cd ros2_catkin_ws/
+source install/setup.sh
+cd
+foxy
+ros2 launch deliverybot_bringup 
+ros2 launch deliverybot_bringup robot.launch.py 
+ros2 run teleop_twist_keyboard teleop_twist_keyboard 
+ros2 run turtlesim turtlesim_node 
+source install/setup.sh
+foxy
+ros2 topic list
+rqt
+ros2 topic list
+ros2 topic echo /cmd_vel 
+ros2 topic list
+rqt
+ros2 topic list
+foxy
+ros2 topic list
+foxy
+ros2 topic list
+cd src/
+ls
+cd deliverybot_
+ls
+cd deliverybot_bringup/
+ls
+cd launch/
+ls
+cd
+ros2 topic list
+ros2 topic echo /input/joystick 
+sudo reboot 
+foxy
+ros2 topic list
+ros2 node list
+rqt
+foxy
+cd ros2_catkin_ws/
+source install/setup.sh 
+ros2 run turtlesim turtlesim_node 
+ros2 daemon stop
+ros2 daemon start
+ros2 run turtlesim turtlesim_node 
+ros2 launch deliverybot_bringup 
+cd
+ros2 launch deliverybot_bringup robot.launch.py 
+cd ros2_catkin_ws/
+colcon build --symlink-install
+ros2 launch deliverybot_bringup robot.launch.py 
+cd
+cd /opt/ros/foxy/share/
+ls
+cd teleop_twist_joy/
+ls
+cd launch/
+ls
+sudo nano teleop-launch.py 
+;s
+cd ..
+ls
+cd config/
+ls
+sudo nano xbox.config.yaml 
+cd ..
+ls
+cd launch/
+ls
+sudo nano teleop-launch.py 
+cd ..
+ls
+cd 
+sudo apt-get install ros-foxy-teleop-joy
+sudo apt-get install ros-foxy-teleop-twist-joy
+sudo apt-get update
+apt-cache policy ros-foxy-teleop-twist-joy
+sudo nano /etc/apt/sources.list
+sudo nano /etc/apt/sources.list.d/nvidia-l4t-apt-source.list
+sudo nano /etc/apt/sources.list.d/vscode.list
+sudo nano /etc/apt/sources.list.d/nvidia-l4t-apt-source.list
+sudo apt-get update
+sudo nano /etc/apt/sources.list.d/nvidia-l4t-apt-source.list
+sudo apt-get purge ".*:armhf"
+sudo dpkg --remove-architecture armh
+sudo dpkg --remove-architecture armhf
+sudo apt-get update
+apt-cache policy ros-foxy-teleop-twist-joy
+sudo apt-get remove ros-foxy-teleop-twist-joy 
+cd ros2_catkin_ws/
+ls
+cd src/
+ls
+git clone -b foxy https://github.com/ros2/teleop_twist_joy.git
+cd ..
+colcon build --symlink-install
+source install/setup.sh 
+ros2 launch deliverybot_bringup robot.launch.py 
+cd
+ros2 run robot_upstart install --job deliverybot_bringup --setup ~/ros2_catkin_ws/install/setup.bash deliverybot_bringup/launch/robot.launch.py
+sudo systemctl daemon-reload && sudo systemctl start deliverybot_bringup
+sudo systemctl status deliverybot_bringup.service 
+foxy
+ros2 topic list
+sudo systemctl status md.service 
+noeit
+foxty
+foxy
+ros2 run ros1_bridge dynamic_bridge 
+ros2 run ros1_bridge dynamic_bridge
+sudo nano ros1_bridge.sh 
+ros2 run ros1_bridge dynamic_bridge
+noetic 
+foxy
+ros2 run ros1_bridge dynamic_bridge 
+ros2 topic list
+ros2 run ros1_bridge dynamic_bridge 
+noetic 
+rostopic list
+ls
+cd /etc/systemd/system/
+ls
+systemctl daemon-reload 
+sudo systemctl enable ros1_bridge_init.service
+sudo systemctl start ros1_bridge_init.service
+sudo systemctl status ros1_bridge_init.service
+rostopic list
+ls
+sudo nano ros1_bridge_init.service 
+cd
+ls
+sudo nano ros1_bridge.sh 
+rostopic list
+sudo systemctl status ros1_bridge_init.service
+sudo systemctl stop ros1_bridge_init.service 
+rostopic list
+sudo systemctl stop ros1_bridge_init.service 
+foxy
+noetic 
+foxy
+ros2 run ros1_bridge dynamic_bridge 
+noetic 
+rostopic list
+rosnode list
+noetic 
+foxy
+ros2 run ros1_bridge dynamic_bridge 
+ros2 topic list
+ros2 topic echo /input/joystick
+ros2 run ros1_bridge dynamic_bridge 
+sudo systemctl start ros1_bridge_init.service 
+sudo systemctl status ros1_bridge_init.service 
+ls
+sudo nano ros1_
+sudo nano ros1_bridge.sh 
+sudo systemctl status ros1_bridge_init.service 
+foxy
+ros2 node list
+ros2 run  ros1_bridge dynamic_bridge 
+noetic 
+rostopic list
+sudo reboot 
+noetic 
+rostopic list
+rosnode list
+roslaunch yocs_cmd_vel_mux cmd_vel_mux.launch 
+cd ros1_catkin_ws/
+ls
+cd src/
+ls
+sudo rm -r yocs_cmd_vel_mux/
+noetic 
+sudo systemctl status ros1_bridge_init.service 
+sudo systemctl stop ros1_bridge_init.service 
+rostopic list
+foxy
+ros2 topic list
+cd ros2_catkin_ws/src/
+ls
+git clone https://github.com/robofoundry/twist_mux_example
+cd twist_mux_example/
+ls
+rosdep install --from-path src --ignore-src -y
+cd ..
+ls
+colcon build --symlink-install
+source install/setup.bash 
+ros2 launch twist_mux_test twist_mux_test.launch.py 
+ls
+cd src/
+ls
+sudo rm -r twist_mux_example/
+ls
+cd ..
+ls
+cd src/
+ls
+git clone -b foxy-devel colcon build
+git clone -b foxy-devel https://github.com/ros-teleop/twist_mux.git
+cd .
+cd ..
+colcon build --symlink-install
+ls
+cd install/
+ls
+sudo rm -r teleop_twist_joy/
+cd ..
+colcon build --symlink-install
+ls
+cd install/
+ls
+cd ..
+sudo mv install /home/nvidia/Documents/
+ls
+colcon build --symlink-install
+cd src/
+ls
+cd ..
+ls
+cd install/
+ls
+cd ..
+colcon build --symlink-install
+ls
+cd build/
+ls
+cd ..
+ls
+sudo cp build /home/nvidia/Documents/
+sudo cp -r build /home/nvidia/Documents/
+ls
+sudo mv build /home/nvidia/Documents/
+sudo mv build /home/nvidia/Documents
+sudo mv build /home/nvidia/Documents/build/
+ls
+colcon build --symlink-install
+ls
+sudo rm -r build install/
+colcon build --symlink-install
+sudo systemctl daemon-reload 
+sudo systemctl restart deliverybot_bringup.service 
+foxy
+ros2 run ros1_bridge dynamic_bridge 
+noetic 
+ros2 run ros1_bridge dynamic_bridge 
+ros2 topic list
+cd ros2_catkin_ws/
+source install/setup.bash 
+noetic 
+noetic 
+foxy
+ros2 topic list
+sudo systemctl status deliverybot_bringup.service 
+sudo reboot 
+foxy
+rqt
+foxy
+rqt
+reboot 
+foxy
+ros2 topic list
+cd ros2_catkin_ws/
+colcon build --symlink-install
+sudo systemctl daemon-reload 
+sudo systemctl restart deliverybot_bringup.service 
+sudo systemctl status deliverybot_bringup.service 
+foxy
+ls
+ros2 topic list
+rqt
+ros2 topic list
+rqt
+ros2 topic list
+ros2 node list
+foxy
+rqt
+sudo systemctl status deliverybot_bringup.service 
+sudo systemctl daemon-reload 
+sudo systemctl restart deliverybot_bringup.service 
+cd ros2_catkin_ws/
+source install/setup.sh 
+sudo systemctl stop deliverybot_bringup.service 
+ros2 launch deliverybot_bringup robot.launch.py -
+ros2 launch deliverybot_bringup robot.launch.py
+sudo systemctl status deliverybot_bringup.service 
+sudo systemctl restart deliverybot_bringup.service 
+sudo systemctl status deliverybot_bringup.service 
+ros2 launch deliverybot_bringup robot.launch.py
+ros2 daemon stop
+ros2 daemon start
+ros2 launch deliverybot_bringup robot.launch.py
+ros2 run teleop_twist_keyboard teleop_twist_keyboard 
+reboot 
+history
+foxy
+ros2 run turtlesim turtle_teleop_key 
+sudo reboot 
+foxy
+rqt
+cd ros2_catkin_ws/
+ls
+source install/setup.sh 
+cd
+ros2 run robot_upstart uninstall deliverybot_bringup.service 
+ros2 run robot_upstart uninstall deliverybot_bringup
+sudo systemctl status deliverybot_bringup.service 
+sudo systemctl stop deliverybot_bringup.service 
+systemctl daemon-reload 
+ros2 run turtlesim turtlesim_node 
+foxy
+ros2 run turtlesim turtle_teleop_key 
+rqt
+sudo systemctl status ros1_bridge_init.service 
+systemctl daemon-reload 
+systemctl stop ros1_bridge_init.service 
+sudo systemctl disable ros1_bridge_init.service 
+systemctl daemon-reload 
+rqt
+sudo reboot 
+foxy
+rqt
+ros2 run turtlesim turtlesim_node 
+foxy
+rqt
+sudo systemctl status ros1_bridge_init.service 
+ros2 run turtlesim turtlesim_node 
+cd ros2_catkin_ws/
+ls
+source install/setup.sh 
+cd
+ros2 launch deliverybot_bringup 
+ros2 launch deliverybot_bringup robot.launch.py 
+foxy
+ros2 run turtlesim turtle_teleop_key 
+rqt
+ros2 topic list
+cd ros2_catkin_ws/
+source install/setup.sh 
+cd
+ros2 launch twist_mux twist_mux_launch.py 
+foxy
+ros2 topic list
+ros2 topic echo /joy_vel 
+ros2 topic echo /cmd_vel 
+noetic 
+ros2 run ros1_bridge dynamic_bridge 
+foxy
+ros2 run robot_upstart install --job deliverybot_bringup --setup ~/ros2_catkin_ws/install/setup.bash deliverybot_bringup/launch/robot.launch.py
+cd ros2_catkin_ws/
+ls
+source install/setup.sh 
+ros2 run robot_upstart install --job deliverybot_bringup --setup ~/ros2_catkin_ws/install/setup.bash deliverybot_bringup/launch/robot.launch.py
+sudo systemctl daemon-reload && sudo systemctl start deliverybot_bringup
+cd
+ls
+rqt
+sudo systemctl daemon-reload 
+sudo systemctl enable ros1_bridge_init.service 
+sudo systemctl start ros1_bridge_init.service 
+sudo systemctl status ros1_bridge_init.service 
+sudo reboot 
+noetic 
+rqt
+sudo systemctl status ros1_bridge_init.service 
+sudo systemctl status md.service 
+rqt
+foxy
+rqt
+sudo systemctl stop ros1_bridge_init.service 
+sudo systemctl stop md.service 
+sudo systemctl stop deliverybot_bringup.service 
+sudo systemctl status deliverybot_bringup.service 
+sudo systemctl disable ros1_bridge_init.service md.service deliverybot_bringup.service 
+sudo reboot 
+udevadm info -a /dev/ttyUSB0
+udevadm info -a /dev/ttyUSB1
+cd /etc/udev/rules.d/
+ls
+sudo nano 50-deliverybot.rules 
+sudo service udev reload 
+sudo service udev restart
+ls -l /dev/tty*
+ls -l /dev/ttyMD*
+ls -l /dev/tty*
+sudo nano 50-deliverybot.rules 
+sudo service udev reload 
+sudo service udev restart
+ls -l /dev/tty*
+sudo nano 50-deliverybot.rules 
+sudo udevadm control --reload-rules
+sudo udevadm trigger 
+ls -l /dev/tty*
+sudo nano 50-deliverybot.rules 
+sudo udevadm control --reload-rules
+sudo udevadm trigger 
+ls -l /dev/tty*
+sudo nano 50-deliverybot.rules 
+sudo udevadm control --reload-rules
+sudo udevadm trigger 
+ls -l /dev/tty*
+cd
+noetic 
+rostopic list
+rqt
+moserial 
+sudo apt-get install putty
+putty
+rqt
+rostopic list
+cd ros1_catkin_ws/
+catkin build
+cd
+noetic 
+rosrun imu_tools angle.py 
+catkin build
+cd ros1_catkin_ws
+catkin build
+rosrun imu_tools angle.py 
+ls
+cd src/imu_tools/
+ls
+cd scripts/
+ls
+sudo chmod u+x
+sudo chmod 666
+sudo chmod 666 angle.py 
+rosrun imu_tools angle.py 
+foxy
+noetic 
+cd ros1_catkin_ws/
+catkin build 
+ls -al /dev/tty*
+ls -al /dev/serial/by-id
+lsusb
+udevadm info -a /dev/ttyUSB0 | grop '{serial}'
+udevadm info -a /dev/ttyUSB0 | grep '{serial}'
+ls /dev/tty*
+udevadm info -a /dev/ttyUSB0 | grep '{serial}'
+ls /dev/tty*
+udevadm info -a /dev/ttyUSB0 | grep '{serial}'
+udevadm info -a /dev/ttyUSB1 | grep '{serial}'
+udevadm info -a /dev/ttyUSB0 | grep '{serial}'
+udevadm info -a /dev/ttyUSB1 | grep '{serial}'
+udevadm info -a /dev/ttyUSB1 | grep '{serial}' | head -n1
+udevadm info -a /dev/ttyUSB0 | grep '{serial}' | head -n1
+udevadm info -a /dev/ttyUSB0/home/nvidia/Downloads/src 2/e2box_imu_9dofv4
+cd
+udevadm info -a /dev/ttyUSB0
+udevadm info -a /dev/ttyUSB1
+udevadm info -a /dev/ttyUSB0
+udevadm info -a /dev/ttyUSB1
+cd
+ls
+cd ros1_catkin_ws/
+ls
+colcon build
+catkin build
+source devel/setup.bash 
+roslaunch e2box_imu e2box_imu.launch 
+catkin build
+roslaunch e2box_imu e2box_imu.launch 
+cd src/
+catkin_create_pkg imu_tools rospy
+cd imu_tools/
+ls
+mkdir scripts
+cd
+roslaunch e2box_imu e2box_imu.launch 
+putty
+roslaunch e2box_imu e2box_imu.launch 
+putty
+roslaunch e2box_imu e2box_imu.launch 
+putty
+roslaunch e2box_imu e2box_imu.launch 
+sudo shutdown now
+ls -al /dev/tty*
+lsusb
+ls -al /dev/tty*
+sudo reboot 
+sudo nano 50-deliverybot.rules 
+sudo udevadm control --reload-rules
+sudo udevadm trigger 
+ls -al /dev/tty*
+sudo nano 50-deliverybot.rules 
+sudo udevadm control --reload-rules
+sudo udevadm trigger 
+ls -al /dev/tty*
+sudo nano 50-deliverybot.rules 
+sudo udevadm control --reload-rules
+sudo udevadm trigger 
+ls -al /dev/tty*
+sudo nano 50-deliverybot.rules 
+sudo udevadm control --reload-rules
+sudo udevadm trigger 
+ls -al /dev/tty*
+sudo nano 50-deliverybot.rules 
+sudo udevadm control --reload-rules
+sudo udevadm trigger 
+ls -al /dev/tty*
+sudo nano 50-deliverybot.rules 
+sudo udevadm control --reload-rules
+sudo udevadm trigger 
+ls -al /dev/tty*
+sudo nano 50-deliverybot.rules 
+sudo udevadm control --reload-rules
+sudo udevadm trigger 
+ls -al /dev/tty*
+ls -al /dev/tty*
+lsusb
+ls -al /dev/tty*
+udevadm info -a -n /dev/ttyACM0 | grep '{serial}' |head -n1
+udevadm info -a -n /dev/ttyACM1 | grep '{serial}' |head -n1
+udevadm info -a -n /dev/ttyACM0
+udevadm info -a -n /dev/ttyACM1
+udevadm info -a -n /dev/ttyACM1 | grep 'KERNELS==' |head -n1
+udevadm info -a -n /dev/ttyACM0 | grep 'KERNELS==' |head -n1
+udevadm info -a -n /dev/ttyACM0
+udevadm info -a -n /dev/ttyACM1
+udevadm info -a -n /dev/ttyACM0
+udevadm info -a -n /dev/ttyACM1
+lsusb
+udevadm info -a -n /dev/ttyACM0
+udevadm info -a -n /dev/ttyACM1
+cd /etc/udev/rules.d/
+sudo nano 50-deliverybot.rules 
+sudo udevadm control --reload-rules
+sudo udevadm triger
+sudo udevadm trigger 
+ls -al /dev/tty*
+sudo nano 50-deliverybot.rules 
+udevadm info -a -n /dev/ttyACM1
+sudo udevadm control --reload-rules
+sudo udevadm trigger 
+ls -al /dev/tty*
+sudo nano 50-deliverybot.rules 
+udevadm info -a -n /dev/ttyACM1
+udevadm info -a -n /dev/ttyACM0
+sudo nano 50-deliverybot.rules 
+udevadm info -a -n /dev/ttyACM0
+udevadm info -a -n /dev/ttyACM1
+dawdwdadwdwadwdawdwawdawdawd
+c
+clear
+foxy
+dadadwawdwwdwad
+c
+clear
+rqt
+foxy
+rqt
+crqt
+ros2 topic list
+foxy
+sudo apt-get install ros-foxy-ublox
+ls /opt/ros/foxy/include | grep ublox
+siduo
+visudo
+sudo visudo
+visudo
+sudo visudo
+sudo 
+sudo su
+pkexec visudo
+visudo
+sudo visudo
+sudo chown 777 nvidia /opt/ros/foxy/share/ublox_gps/
+sudo chown -R nvidia /opt/ros/foxy/share/ublox_gps/
+ls -al /dev/tty*
+foxy
+ros2 launch ublox_gps ublox_f9p_base_launc.py
+cd /opt/ros/foxy/share/ublox_gps/
+ls
+cd launch/
+ls
+ros2 launch ublox_gps ublox_f9p_base_launc.py
+ls
+sudo chmod 666 ublox_f9p_base_launch.py 
+sudo chmod 666 ublox_f9p_rover_launch.py 
+sudo nano ~/.bashrc 
+ros2 launch ublox_gps ublox_f9p_base_launc.py
+source /opt/ros/foxy/setup.bash 
+ros2 launch ublox_gps ublox_f9p_base_launc.py
+foxy
+ros2 launch ublox_gps ublox_f9p_base_launc.py
+ros2 launch ublox_gps ublox_f9p_base_launch.py 
+foxy
+ros2 launch ublox_gps ublox_f9p_base_launch.py 
+sudo shutdown now
+foxy
+cd
+ros2 launch ublox_gps ublox_f9p_rover_launch.py 
+foxy
+sudo nano ~/.bashrc 
+foxy
+sudo nano ~/.bashrc 
+foxy
+cd ros2_catkin_ws/
+source install/setup.bash 
+foxy
+ros2 launch ublox_gps ublox_f9p_rover_launch.py 
+noetic 
+rostopic list
+rostopic pub /reset_alarm std_msgs/Bool "data: false" 
+rostopic pub /reset_alarm std_msgs/Bool "data: true" 
+FOXY
+foxy
+rqt
+sudo shutdown now
+noetic 
+cd ros1_catkin_ws/
+ls
+cd src/
+ls
+cd
+fooxy
+foxy
+sudo nano ~/.bashrc 
+foxy
+ros2 run ros1_bridge dynamic_bridge 
+noetic 
+roslaunch md md_robot_node
+roslaunch md md_robot_node.launch 
+cd ros1_catkin_ws/
+catkin build
+noetic 
+cd ros1_catkin_ws/
+roslaunch md md_robot_node.launch 
+catkin build
+roslaunch md md_robot_node.launch 
+catkin build
+roslaunch md md_robot_node.launch 
+catkin build
+roslaunch md md_robot_node.launch 
+catkin build
+roslaunch md md_robot_node.launch 
+catkin build
+roslaunch md md_robot_node.launch 
+foxy
+ros2 launch ublox_gps ublox_f9p_base_launch.py 
+foxy
+ros2 launch ublox_gps ublox_f9p_rover_launch.py 
+ros2 launch ublox_gps ublox_f9p_base_launch.py 
+clear
+foxy
+rqt
+ros2 launch ublox_gps ublox_f9p_rover_launch.py 
+clear
+foxy
+ros2 launch ublox_gps ublox_f9p_base_launch.py 
+rqt
+clear
+sudo apt install ros-foxy-robot-localization
+foxy
+ros2 launch ublox_gps ublox_f9p_base_launch.py 
+ros2 launch deliverybot_bringup robot.launch.py 
+foxy
+rqt
+noeit
+noetic 
+foxy
+ros2 run ros1_bridge dynamic_bridge 
+foxy
+ros2 launch deliverybot_bringup robot.launch.py 
+noeit
+ls -al /dev/tty*
+sudo reboot 
+noetic 
+rostopic pub /reset_alarm 
+rostopic pub /reset_alarm std_msgs/Bool "data: false" 
+rostopic pub /reset_alarm std_msgs/Bool "data: ftrue 
+
+rostopic pub /reset_alarm std_msgs/Bool "data: true"
+noetic 
+rostopic list
+rosnode list
+rqt
+rosnode list
+rostopic list
+rqt
+noetic 
+roslaunch md md_robot_node.launch 
+foxy
+rqt --clear-config
+sudo apt install ros-foxy-tf2-tools 
+
+sudo apt install ros-foxy-rqt-tree
+sudo apt install ros-foxy-rqt-tf-tree 
+rqt --clear-config
+rqt
+cd /opt/ros/foxy/share/ublox_gps/config/
+ls
+sudo nano zed_f9p_base.yaml 
+sudo nano zed_f9p_rover.yaml 
+foxy
+noetic 
+ros2 run ros1_bridge dynamic_bridge 
+foxy
+ros2 launch deliverybot_bringup robot.launch.py 
+noetic 
+roslaunch md md_robot_node.launch 
+noetic 
+roslaunch e2box_imu e2box_imu.launch 
+noetic 
+rqt
+roslaunch e2box_imu e2box_imu.launch 
+rqt
+rostopic list
+foxuy
+foxy
+rviz2 
+rviz2
+foxy
+rqt
+foxy
+ros2 launch deliverybot_bringup dual_ekf_navsat.launch.py 
+sudo gedit /home/nvidia/.ros/log/2024-03-24-10-28-20-465463-tegra-ubuntu-5280
+cd /home/nvidia/.ros/log/2024-03-24-10-28-20-465463-tegra-ubuntu-5280
+ls
+sudo nano launch.log 
+cd
+ros2 launch deliverybot_bringup dual_ekf_navsat.launch.py 
+sudo apt install ros-foxy-robot-localization
+ros2 launch deliverybot_bringup dual_ekf_navsat.launch.py 
+foxy
+ros2 launch deliverybot_bringup dual_ekf_navsat.launch.py 
+foxy
+rqt
+foxy
+rviz1
+rviz2
+foxy
+ros2 launch deliverybot_bringup dual_ekf_navsat.launch.py 
+history
+foxy
+rviz2 
+noetic 
+foxy
+ros2 run ros1_bridge dynamic_bridge 
+sudo reboot 
+foxy
+rqt
+foxy
+ros2 launch deliverybot_bringup robot.launch.py 
+noetic 
+roslaunch e2box_imu e2box_imu.launch 
+/bin/python
+foxu
+foxy
+ros2 launch deliverybot_bringup dual_ekf_navsat.launch.py 
+rqt
+foxy
+rqt
+foxy
+rviz2
+ros2 launch deliverybot_bringup sw_navigation_launch.py
+cd home/nvidia/ros2_catkin_ws/install/deliverybot_bringup/share/deliverybot_bringup/params/
+cd ros2_catkin_ws/install/deliverybot_bringup/share/deliverybot_bringup/params/
+cd ros2_catkin_ws/install/deliverybot_bringup/share/deliverybot_bringup/param/
+ls
+cd
+cd ros2_catkin_ws/
+colcon build --symlink-install
+cd
+cd ros2_catkin_ws/install/deliverybot_bringup/share/deliverybot_bringup/param/
+ls
+cd
+ros2 launch deliverybot_bringup sw_navigation_launch.py
+foxy
+ros2 launch deliverybot_bringup sw_navigation_launch.py 
+rqt
+rviz2
+rqt
+noetic 
+rosrun imu_tools angle.py 
+rostopic pub /reset_alarm std_msgs/Bool "data: true" 
+sudo reboot 
+noeit
+noetic 
+roslaunch md md_robot_node.launch 
+fooxy
+foxy
+ros2 launch deliverybot_bringup robot.launch.py 
+fosy
+foxy
+ros2 launch deliverybot_bringup dual_ekf_navsat.launch.py 
+noetic 
+rostopic list
+rqt
+rostopic pub /reset_alarm 
+rostopic pub /reset_alarm std_msgs/Bool "data: true" 
+foxy
+rviz2
+foxy
+rviz2
+foxy
+rqt
+rviz
+ros2 launch deliverybot_bringup dual_ekf_navsat.launch.py 
+noetic 
+roslaunch e2box_imu e2box_imu.launch 
+rviz
+roslaunch e2box_imu e2box_imu.launch 
+noetic 
+roslaunch md md_robot_node.launch 
+foxy
+ros2 launch deliverybot_bringup dual_ekf_navsat.launch.py 
+rviz2
+ros2 launch deliverybot_bringup sw_navigation_launch.py 
+rviz2
+ros2 launch deliverybot_bringup sw_navigation_launch.py 
+foxy
+ros2 launch deliverybot_bringup robot.launch.py 
+noetic 
+foxy
+ros2 run ros1_bridge dynamic_bridge 
+sudo reboot 
+noetic 
+rosrun imu_tools angle.py 
+rostopic pub /reset_alarm std_msgs/Bool "data: true" 
+cd ros1_catkin_ws/src/
+ls
+git clone https://github.com/AbhiRP/Fake-LaserScan.git
+catkin build 
+noetic 
+catkin build 
+cd ..
+catkin build 
+cd src/
+ls
+cd ..
+cd ros1_catkin_ws/
+catkin build
+cd src/Fake-LaserScan/
+ls
+mkdir include
+cd ../..
+catkin build
+noetic 
+cd
+cd ros1_catkin_ws/
+ls
+source devel/setup.bash 
+roslaunch laser_scan laser_scan_launch.launch 
+catkin build
+roslaunch laser_scan laser_scan_launch.launch 
+catkin build
+roslaunch laser_scan laser_scan_launch.launch 
+foxy
+noetic 
+foxy
+ros2 launch deliverybot_bringup dual_ekf_navsat.launch.py 
+rviz2 
+rqt
+noetic 
+roslaunch e2box_imu e2box_imu.launch 
+noetic 
+noetic 
+roslaunch md md_robot_node.launch 
+ros2 launch deliverybot_bringup robot.launch.py 
+sudo reboot 
+noetic 
+noetic 
+roslaunch e2box_imu 
+roslaunch e2box_imu e2box_imu.launch 
+roslaunch md md_robot_node.launch 
+foxy
+rviz2 2
+noeit
+noetic 
+rostopic pub /reset_alarm std_msgs/Bool "data: true" 
+foxy
+ros2 launch deliverybot_bringup sw_navigation_launch.py 
+foxy
+ros2 launch deliverybot_bringup dual_ekf_navsat.launch.py 
+ros2 launch deliverybot_bringup dual_ekf_navsat.launch.py
+foxy
+rqt
+rviz2
+sudo shutdown now
+noetic 
+rosrun imu_tools angle.py 
+foxy
+ros2 launch deliverybot_bringup robot.launch.py 
+noetic 
+roslaunch e2box_imu e2box_imu.launch 
+noetic 
+roslaunch laser_scan laser_scan_launch.launch 
+noetic 
+roslaunch md md_robot_node.launch 
+noetic 
+foxy
+ros2 run ros1_bridge dynamic_bridge 
+foxy
+rqt
+rviz2 
+foxy
+rviz2 
+foxy
+ros2 launch depthimage_to_laserscan depthimage_to_laserscan-launch.py 
+foxy
+rqt
+ls -al /dev/tty*
+realsense-viewer 
+foxy
+ros2 launch realsense2_camera rs_launch.py 
+sudo shutdown now
+ls
+cd Documents/
+ls
+cd librealsense2/presets/
+ls
+cd ..
+ls
+cd ..
+mkdir led_blink
+sudo rm -r led_blink
+ls
+mkdir testbuzzer
+cd testbuzzer/
+gedit buzzer
+ls
+mv buzzer buzzer.py
+ls
+python3 buzzer.py
+sudo python3 buzzer.py
+sudo python3 setup.py install
+sudo pip3 install Jetson.GPIO
+/opt/nvidia/jetson-io/jetson-io.py
+sudo pip3 install Jetson.GPIO
+sudo python3 buzzer.py
+ifconfig
+sudo shutdown now
+foxy
+source /home/nvidia/ws_livox/install/setup.bash
+foxy
+ls
+cd ws_livox/
+ls
+cd ..
+sudo nano ~/.bashrc 
+foxy
+ls
+cd ws_livox/
+ls
+cd src/
+ls
+cd ..
+colcon build --symlink-install
+source install/setup.bash 
+ls
+cd ..
+sudo nano ~/.bashrc 
+source ~/.bashrc 
+rqt
+foxy
+rqt
+sudo reboot 
+foxy
+ros2 launch livox_ros_driver2 rviz_MID360_launch.py 
+ros2 launch deliverybot_bringup sw_robot.launch.py 
+ros2 launch livox_ros_driver2 rviz_MID360_launch.py 
+foxy
+ros2 launch livox_ros_driver2 rviz_MID360_launch.py 
+foxy
+ros2 launch livox_frame_remap 
+ros2 run livox_frame_remap livox_frame_remap_node 
+foxy
+ros2 launch deliverybot_description launch_deliverybot.launch.py 
+foxy
+ros2 launch pointcloud_to_laserscan livox_pointcloud_to_laserscan_launch.py 
+foxy
+rqt
+rviz2
+foxy
+rqt
+foxy
+foxy
+foxy
+rqt
+roxy
+foxy
+rviz2
+foxy
+ros2 launch livox_ros_driver2 rviz_MID360_launch.py 
+ros2 launch deliverybot_bringup sw_robot.launch.py 
+ros2 launch deliverybot_bringup robot.launch.py 
+sudo shutdown now
+foxy
+rviz2
+foxy
+rqt
+ros2 launch deliverybot_bringup sw_navigation_launch.py 
+foxy
+ros2 launch deliverybot_bringup robot.launch.py 
+sudo shutdown now
+ls
+cd Documents/
+ls
+cd testbuzzer/
+sudo python3 buzzer.py
+shutdown -h now
+sudo shutdown -h now
+foxy
+ros2 launch depthimage_to_laserscan 
+ros2 launch depthimage_to_laserscan depthimage_to_laserscan-launch.py 
+foxt
+foxy
+rqt
+foxy
+foxy
+rviz2
+rqt
+rviz2
+rqt
+rviz
+rviz2
+sudo shutdown now
+noetic 
+roslaunch e2box_imu e2box_imu.launch 
+noetic 
+noetic 
+roslaunch md md_robot_node.launch 
+foxy
+ros2 launch deliverybot_bringup robot.launch.py 
+ros2 launch realsense2_camera rs_launch.py 
+ros2 launch deliverybot_bringup robot.launch.py 
+noetic 
+foxy
+ros2 run ros1_bridge dynamic_bridge 
+noetic 
+foxy
+ros2 launch deliverybot_bringup robot.launch.py 
+cd ros1_catkin_ws/
+ls
+cd src/
+catkin_create_pkg deliverybot_bringup std_msgs rospy roscpp
+cd deliverybot_bringup/
+ls
+mkdir launch
+cd ..
+ls
+catkin build 
+cd
+noetic 
+foxy
+noetic 
+rqt
+noetic 
+roslaunch deliverybot_bringup robot.launch 
+foxy
+ros2 launch deliverybot_bringup robot.launch.py 
+noetic 
+roslaunch deliverybot_bringup robot.launch 
+foxy
+ros2 launch deliverybot_bringup robot.launch.py 
+sudo shutdown now
+noetic 
+foxy
+ros2 run ros1_bridge dynamic_bridge 
+noetic 
+rosrun imu_tools angle.py 
+rostopic pub /reset_alarm std_msgs/Bool "data: true" 
+foxy
+ros2 launch deliverybot_bringup sw_navigation_launch.py 
+foxy
+rviz2
+rqt
+rviz2
+rqt
+ros2 topic echo /livox/lidar_scan_left 
+rqt
+ros2 topic hz /livox/lidar_scan_left 
+ros2 topic hz /livox/lidar_scan_right 
+rviz2
+noeit
+noetic 
+roslaunch deliverybot_bringup robot.launch 
+noetic 
+foxy
+ros2 run ros1_bridge dynamic_bridge 
+foxy
+ros2 launch deliverybot_bringup robot.launch.py 
+foxy
+ros2 launch deliverybot_bringup robot.launch.py 
+ros2 launch realsense2_camera rs_launch.py 
+ros2 launch realsense2_camera rs_launch.py align_depth:=true
+ros2 launch realsense2_camera rs_launch.py align_depth.enable:=true
+realsense-viewer 
+sudo reboot 
+foxy
+ros2 launch deliverybot_bringup robot.launch.py 
+realsense-viewer 
+ros2 launch deliverybot_bringup robot.launch.py 
+noetic 
+rostopic pub /reset_alarm std_msgs/Bool "data: true" 
+foxy
+ros2 launch deliverybot_bringup sw_navigation_launch.py 
+ros2 launch deliverybot_bringup sw_navigation_launch.py
+foxy
+rviz2
+rqt
+rviz2
+noeit
+noetic 
+foxy
+ros2 run ros1_bridge dynamic_bridge 
+roslaunch laser_scan laser_scan_launch.launch 
+foxy
+ros2 launch deliverybot_bringup robot.launch.py 
+sudo reboot 
+roslaunch deliverybot_bringup robot.launch 
+realsense-viewer 
+cd Documents/testbuzzer/
+sudo python3 buzzer.py
+foxy
+ros2 launch deliverybot_bringup sw_navigation_launch.py 
+foxy
+rviz1
+rviz2
+rviz1
+rviz2
+noetic 
+roslaunch deliverybot_bringup robot.launch 
+foxy
+ros2 launch deliverybot_bringup robot.launch.py 
+sudo shutdown now
+ls
+cd Documents/
+ls
+cd testbuzzer/
+ls
+python3 buzzer.py 
+sudo python3 buzzer.py 
+ls
+cs
+gedit ~/.bashrc 
+cd ros2_catkin_ws/src
+ls
+foxy 
+ros2 pkg create buzzer_scan --build-type ament_python --dependencies rclpy sensor_msgs
+cd buzzer_scan/
+ros2 topic list
+cd
+code
+cd ros2_catkin_ws/src/
+ls
+cd buzzer_scan/
+cd ..
+ls
+cd deliverybot_bringup
+ls
+cd src/
+ls
+nano map_odom_static_broadcaster.cpp
+ls
+nano map_odom_static_broadcaster.cpp
+cd ..
+cd buzzer_scan/
+ls
+nano setup.py 
+nano package.xml
+cd buzzer_scan/
+gedit scan_data
+ls
+cd ..
+ls
+gedit setup.py
+cd buzzer_scan/
+gedit scan_data
+cb
+cd ..
+colcon build --symlink-install
+cd src/buzzer_scan/
+gedit setup.py 
+cd ..
+colcon build --symlink-install
+cd src/buzzer_scan/
+gedit setup.py 
+wls
+ls
+gedit package.xml 
+gedit setup.py 
+cd buzzer_scan/
+ls
+sudo mv scan_data scan_data.py
+ls
+cd ..
+colcon build --symlink-install
+ros2 run buzzer_scan scan_data.py
+ros2 topic list
+foxy
+ros2 run buzzer_scan scan_data
+ros2 run buzzer_scan scan_data.py
+cd src/buzzer_scan/buzzer_scan/
+ls
+ros2 run buzzer_scan scan_data.py
+ros2 run buzzer_scan scan_data
+gedit scan_data.py
+sudo ros2 run buzzer_scan scan_data
+sudo -l
+sudo -i
+clear
+ros2 run buzzer_scan scan_data
+sudo usermod -aG gpio nvidia
+ros2 run buzzer_scan scan_data
+foxy
+cd ros2_catkin_ws/src/buzzer_scan/
+cd buzzer_scan/
+ls
+cd ..
+ls 
+history
+ifconfig 
+ls
+cd Documents/testbuzzer/
+ls
+python3 buzzer.py
+ros2 run buzzer_scan scan_data
+foxy
+ros2 run buzzer_scan scan_data
+ps
+exit
+foxy
+ros2 run buzzer_scan scan_data
+cd ros2_catkin_ws/src/buzzer_scan/buzzer_scan/
+gedit scan_data.py 
+cd ros2_catkin_ws/src/
+ls
+cd ..
+colcon build --symlink-install
+foxy
+ros2 run buzzer_scan scan_data 
+cd
+cd Documents/testbuzzer/
+sudo python3 buzzer.py 
+python3 buzzer.py 
+cd
+cd /etc/udev/rules.d/
+ls
+sudo nano 99-gpio.rules
+cd
+sudo udevadm control --reload-rules && sudo udevadm trigger
+cd Documents/testbuzzer/
+python3 buzzer.py
+cd
+cd /etc/udev/rules.d/
+ls
+sudo nano 99-gpio.rules 
+sudo rm 99-gpio.rules 
+cd
+sudo cp /lib/python3/dist-packages/Jetson/GPIO/
+cd /lib/python3/dist-packages/Jetson/GPIO/
+ls
+cd
+sudo groupadd -f -r gpio
+sudo usermod -a -G gpio nvidia
+cd Documents/
+cd testbuzzer/
+python3 buzzer.py 
+sudo python3 buzzer.py 
+sudo groupadd -f -r gpio
+sudo usermod -a -G gpio your_user_name
+sudo usermod -a -G gpio nvidia 
+python3 buzzer.py 
+cd
+sudo apt install python3-pip
+sudo pip3 install Jetson.GPIO
+cd Documents/testbuzzer/
+python3 buzzer.py 
+sudo groupadd -f -r gpio
+sudo usermod -a -G gpio nvidia
+sudo cp /opt/nvidia/jetson-gpio/etc/99-gpio.rules /etc/udev/rules.d/
+ls -l /home/nvidia/Documents/
+cd
+sudo cp lib/python/Jetson/GPIO/99-gpio.rules /etc/udev/rules.d/
+cd Documents/testbuzzer/
+python3 buzzer.py 
+sudo python3 buzzer.py 
+cd /etc/udev/rules.d/
+ls
+sudo nano 99-gpio.rules
+sudo reboot 
+foxy
+ros2 topic list
+rviz2 
+foxy
+ros2 launch deliverybot_bringup robot.launch.py 
+foxy
+cd
+ros2 launch deliverybot_bringup robot.launch.py 
+noetic 
+foxy
+noetic 
+rostopic pub /reset_alarm std_msgs/Bool "data: true" 
+rqt
+ros2 launch deliverybot_bringup sw_navigation_launch.py 
+sudo reboot 
+rqt
+rviz2 
+NOETI
+noetic 
+roslaunch deliverybot_bringup robot.launch 
+ros2 launch deliverybot_bringup robot.launch.py 
+noetic 
+foxy
+ros2 run ros1_bridge dynamic_bridge 
+sudo systemctl daemon-reload 
+sudo systemctl start ros1_bridge_init.service
+sudo systemctl enable ros1_bridge_init.service 
+sudo systemctl start md.service 
+sudo systemctl enable md.service 
+sudo systemctl start deliverybot_bringup.service 
+sudo systemctl enable deliverybot_bringup.service 
+sudo reboot 
+foxy
+ros2 run teleop_twist_keyboard teleop_twist_keyboard 
+sudo reboot 
+noetic 
+rostopic list
+history
+foxy
+ros2 topic list
